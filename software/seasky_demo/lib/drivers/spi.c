@@ -18,11 +18,11 @@
 #include <string.h>
 #include "fpioa.h"
 #include "gpiohs.h"
+#include "iomem.h"
 #include "platform.h"
 #include "spi.h"
 #include "sysctl.h"
 #include "utils.h"
-#include "iomem.h"
 
 volatile spi_t *const spi[4] =
     {
@@ -422,6 +422,10 @@ void spi_send_data_normal_dma(dmac_channel_number_t channel_num, spi_device_num_
             break;
         case SPI_TRANS_INT:
             buf = (uint32_t *)tx_buff;
+            for(i = 0; i < tx_len; i++)
+            {
+                buf[i] = buf[i] ^ 0xFFFFFFFF;
+            }
             break;
         case SPI_TRANS_CHAR:
         default:
@@ -430,11 +434,11 @@ void spi_send_data_normal_dma(dmac_channel_number_t channel_num, spi_device_num_
 #else
             buf = (uint32_t *)malloc((tx_len) * sizeof(uint32_t));
 #endif
-
             for(i = 0; i < tx_len; i++)
                 buf[i] = ((uint8_t *)tx_buff)[i];
             break;
     }
+
     spi_handle->dmacr = 0x2; /*enable dma transmit*/
     spi_handle->ssienr = 0x01;
 
@@ -1357,8 +1361,8 @@ static void spi_slave_transfer_mode(void)
 static void spi_slave_cs_irq(void)
 {
     volatile spi_t *spi_handle = spi[2];
-    if (g_instance.status == IDLE && spi_handle->rxflr == 8)
-		g_instance.status = COMMAND;
+    if(g_instance.status == IDLE && spi_handle->rxflr == 8)
+        g_instance.status = COMMAND;
     if(g_instance.status == IDLE)
         spi_slave_idle_mode();
     else if(g_instance.status == COMMAND)

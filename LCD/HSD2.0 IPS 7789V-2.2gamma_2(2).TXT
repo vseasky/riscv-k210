@@ -1,0 +1,81 @@
+HW_Reset();                
+
+Delay(120);                //ms
+
+Write(Command , 0x11);     //Sleep out
+
+Delay(120);                //Delay 120ms
+
+Write(Command , 0x36);     
+Write(Parameter , 0x05);   
+
+Write(Command , 0x21);     
+
+Write(Command , 0xB2);     
+Write(Parameter , 0x05);   
+Write(Parameter , 0x05);   
+Write(Parameter , 0x00);   
+Write(Parameter , 0x33);   
+Write(Parameter , 0x33);   
+
+Write(Command , 0xB7);     
+Write(Parameter , 0x75);   
+
+Write(Command , 0xBB);     
+Write(Parameter , 0x22);   
+
+Write(Command , 0xC0);     
+Write(Parameter , 0x2C);   
+
+Write(Command , 0xC2);     
+Write(Parameter , 0x01);   
+
+Write(Command , 0xC3);     
+Write(Parameter , 0x13);   
+
+Write(Command , 0xC4);     
+Write(Parameter , 0x20);   
+
+Write(Command , 0xC6);     
+Write(Parameter , 0x11);   
+
+Write(Command , 0xD0);     
+Write(Parameter , 0xA4);   
+Write(Parameter , 0xA1);   
+
+Write(Command , 0xD6);     
+Write(Parameter , 0xA1);   
+
+Write(Command , 0xE0);     
+Write(Parameter , 0xD0);   
+Write(Parameter , 0x05);   
+Write(Parameter , 0x0A);   
+Write(Parameter , 0x09);   
+Write(Parameter , 0x08);   
+Write(Parameter , 0x05);   
+Write(Parameter , 0x2E);   
+Write(Parameter , 0x44);   
+Write(Parameter , 0x45);   
+Write(Parameter , 0x0F);   
+Write(Parameter , 0x17);   
+Write(Parameter , 0x16);   
+Write(Parameter , 0x2B);   
+Write(Parameter , 0x33);   
+
+Write(Command , 0xE1);     
+Write(Parameter , 0xD0);   
+Write(Parameter , 0x05);   
+Write(Parameter , 0x0A);   
+Write(Parameter , 0x09);   
+Write(Parameter , 0x08);   
+Write(Parameter , 0x05);   
+Write(Parameter , 0x2E);   
+Write(Parameter , 0x43);   
+Write(Parameter , 0x45);   
+Write(Parameter , 0x0F);   
+Write(Parameter , 0x16);   
+Write(Parameter , 0x16);   
+Write(Parameter , 0x2B);   
+Write(Parameter , 0x33);   
+
+Write(Command , 0x29);     //Display on
