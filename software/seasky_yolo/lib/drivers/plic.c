@@ -22,7 +22,7 @@
 volatile plic_t *const plic = (volatile plic_t *)PLIC_BASE_ADDR;
 
 static plic_instance_t plic_instance[PLIC_NUM_CORES][IRQN_MAX];
-
+//初始化为外部中断
 void plic_init(void)
 {
     int i = 0;

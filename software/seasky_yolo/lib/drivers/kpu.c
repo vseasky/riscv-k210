@@ -9,8 +9,8 @@
 #include "bsp.h"
 #include "dmac.h"
 #include "kpu.h"
-#include "printf.h"
 #include "nncase.h"
+#include "printf.h"
 #include "utils.h"
 
 #define LAYER_BURST_SIZE 12
@@ -1382,7 +1382,7 @@ int kpu_load_kmodel(kpu_model_context_t *ctx, const uint8_t *buffer)
         if(!ctx->main_buffer)
             return -1;
         uint32_t body_size = 0;
-        for(int i=0; i<ctx->layers_length; i++)
+        for(int i = 0; i < ctx->layers_length; i++)
         {
             const kpu_model_layer_header_t *cnt_layer_header = ctx->layer_headers + i;
             body_size += cnt_layer_header->body_size;
@@ -1390,11 +1390,11 @@ int kpu_load_kmodel(kpu_model_context_t *ctx, const uint8_t *buffer)
         uint8_t *body_start_iomem = (uint8_t *)((uintptr_t)ctx->body_start - IOMEM);
         const uint8_t *body_start_cache = ctx->body_start;
         memcpy(body_start_iomem, body_start_cache, body_size);
-        for(int i=0; i<body_size; i++)
+        for(int i = 0; i < body_size; i++)
         {
             configASSERT(body_start_iomem[i] == body_start_cache[i]);
         }
-        
+
     } else if(header->version == 'KMDL')
     {
         return nncase_load_kmodel(ctx, buffer);
@@ -1662,8 +1662,7 @@ int kpu_run_kmodel(kpu_model_context_t *ctx, const uint8_t *src, dmac_channel_nu
 
     switch(first_layer_header->type)
     {
-        case KL_K210_CONV:
-        {
+        case KL_K210_CONV: {
             const kpu_model_conv_layer_argument_t *first_layer = (const kpu_model_conv_layer_argument_t *)ctx->body_start;
             kpu_layer_argument_t layer_arg = *(volatile kpu_layer_argument_t *)(ctx->model_buffer + first_layer->layer_offset);
 
@@ -1677,8 +1676,7 @@ int kpu_run_kmodel(kpu_model_context_t *ctx, const uint8_t *src, dmac_channel_nu
             }
         }
         break;
-        case KL_FULLY_CONNECTED:
-        {
+        case KL_FULLY_CONNECTED: {
             const kpu_model_fully_connected_layer_argument_t *first_layer = (const kpu_model_fully_connected_layer_argument_t *)ctx->body_start;
             kpu_kmodel_input_float((const float *)src, (float *)(ctx->main_buffer + first_layer->main_mem_in_address), first_layer->in_channels);
             ai_step_not_isr(ctx);

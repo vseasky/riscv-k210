@@ -422,10 +422,10 @@ void spi_send_data_normal_dma(dmac_channel_number_t channel_num, spi_device_num_
             break;
         case SPI_TRANS_INT:
             buf = (uint32_t *)tx_buff;
-            for(i = 0; i < tx_len; i++)
-            {
-                buf[i] = buf[i] ^ 0xFFFFFFFF;
-            }
+            // for(i = 0; i < tx_len; i++)
+            // {
+            //     buf[i] = buf[i] ^ 0xFFFFFFFF;
+            // }
             break;
         case SPI_TRANS_CHAR:
         default:
