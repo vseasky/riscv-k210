@@ -1,0 +1,41 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/kendryte.dir/bsp/crt.S.obj"
+  "CMakeFiles/kendryte.dir/bsp/entry.c.obj"
+  "CMakeFiles/kendryte.dir/bsp/entry_user.c.obj"
+  "CMakeFiles/kendryte.dir/bsp/interrupt.c.obj"
+  "CMakeFiles/kendryte.dir/bsp/locks.c.obj"
+  "CMakeFiles/kendryte.dir/bsp/printf.c.obj"
+  "CMakeFiles/kendryte.dir/bsp/sleep.c.obj"
+  "CMakeFiles/kendryte.dir/bsp/syscalls.c.obj"
+  "CMakeFiles/kendryte.dir/drivers/aes.c.obj"
+  "CMakeFiles/kendryte.dir/drivers/apu.c.obj"
+  "CMakeFiles/kendryte.dir/drivers/clint.c.obj"
+  "CMakeFiles/kendryte.dir/drivers/dmac.c.obj"
+  "CMakeFiles/kendryte.dir/drivers/dvp.c.obj"
+  "CMakeFiles/kendryte.dir/drivers/fft.c.obj"
+  "CMakeFiles/kendryte.dir/drivers/fpioa.c.obj"
+  "CMakeFiles/kendryte.dir/drivers/gpio.c.obj"
+  "CMakeFiles/kendryte.dir/drivers/gpiohs.c.obj"
+  "CMakeFiles/kendryte.dir/drivers/i2c.c.obj"
+  "CMakeFiles/kendryte.dir/drivers/i2s.c.obj"
+  "CMakeFiles/kendryte.dir/drivers/iomem.c.obj"
+  "CMakeFiles/kendryte.dir/drivers/kpu.c.obj"
+  "CMakeFiles/kendryte.dir/drivers/plic.c.obj"
+  "CMakeFiles/kendryte.dir/drivers/pwm.c.obj"
+  "CMakeFiles/kendryte.dir/drivers/rtc.c.obj"
+  "CMakeFiles/kendryte.dir/drivers/sha256.c.obj"
+  "CMakeFiles/kendryte.dir/drivers/spi.c.obj"
+  "CMakeFiles/kendryte.dir/drivers/sysctl.c.obj"
+  "CMakeFiles/kendryte.dir/drivers/timer.c.obj"
+  "CMakeFiles/kendryte.dir/drivers/uart.c.obj"
+  "CMakeFiles/kendryte.dir/drivers/uarths.c.obj"
+  "CMakeFiles/kendryte.dir/drivers/utils.c.obj"
+  "CMakeFiles/kendryte.dir/drivers/wdt.c.obj"
+  "libkendryte.a"
+  "libkendryte.pdb"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang C)
+  include(CMakeFiles/kendryte.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

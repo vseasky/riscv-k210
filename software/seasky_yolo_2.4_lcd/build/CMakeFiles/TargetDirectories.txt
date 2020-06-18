@@ -1,0 +1,9 @@
+E:/github_ide/SEASKY_K210/software/seasky_yolo_v1_2.4_lcd/build/CMakeFiles/edit_cache.dir
+E:/github_ide/SEASKY_K210/software/seasky_yolo_v1_2.4_lcd/build/CMakeFiles/hello_world.dir
+E:/github_ide/SEASKY_K210/software/seasky_yolo_v1_2.4_lcd/build/CMakeFiles/rebuild_cache.dir
+E:/github_ide/SEASKY_K210/software/seasky_yolo_v1_2.4_lcd/build/lib/CMakeFiles/rebuild_cache.dir
+E:/github_ide/SEASKY_K210/software/seasky_yolo_v1_2.4_lcd/build/lib/CMakeFiles/kendryte.dir
+E:/github_ide/SEASKY_K210/software/seasky_yolo_v1_2.4_lcd/build/lib/CMakeFiles/edit_cache.dir
+E:/github_ide/SEASKY_K210/software/seasky_yolo_v1_2.4_lcd/build/lib/nncase/CMakeFiles/nncase.dir
+E:/github_ide/SEASKY_K210/software/seasky_yolo_v1_2.4_lcd/build/lib/nncase/CMakeFiles/edit_cache.dir
+E:/github_ide/SEASKY_K210/software/seasky_yolo_v1_2.4_lcd/build/lib/nncase/CMakeFiles/rebuild_cache.dir
