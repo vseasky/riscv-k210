@@ -13,6 +13,11 @@
 - **简单说明在深度学习图像识别方面，他比树莓派强，而其成本不超过100元，淘宝也可以买到其他不错的k210开发板**
 - **注意核心板部分打板需要1mm板厚，不要打1.6mm板厚的**
 
+
+## yolo模型训练以及部署参考<a href="https://github.com/SEASKY-Master/Yolo-for-k210">https://github.com/SEASKY-Master/Yolo-for-k210</a>
+
+- win上完整的YOLO训练以及官方SDK开发流程
+
 <img src="./image/k210_board.gif" width = "800"/>
 <img src="./image/seasky_k210_5.png" width = "800"/>
 <img src="./image/seasky_k210_6.png" width = "800"/>
