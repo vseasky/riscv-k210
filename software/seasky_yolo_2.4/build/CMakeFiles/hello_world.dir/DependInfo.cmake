@@ -4,14 +4,14 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "E:/github_ide/SEASKY_K210/software/seasky_yolo_v1_2.4_lcd/src/hello_world/image_process.c" "E:/github_ide/SEASKY_K210/software/seasky_yolo_v1_2.4_lcd/build/CMakeFiles/hello_world.dir/src/hello_world/image_process.c.obj"
-  "E:/github_ide/SEASKY_K210/software/seasky_yolo_v1_2.4_lcd/src/hello_world/lcd.c" "E:/github_ide/SEASKY_K210/software/seasky_yolo_v1_2.4_lcd/build/CMakeFiles/hello_world.dir/src/hello_world/lcd.c.obj"
-  "E:/github_ide/SEASKY_K210/software/seasky_yolo_v1_2.4_lcd/src/hello_world/main.c" "E:/github_ide/SEASKY_K210/software/seasky_yolo_v1_2.4_lcd/build/CMakeFiles/hello_world.dir/src/hello_world/main.c.obj"
-  "E:/github_ide/SEASKY_K210/software/seasky_yolo_v1_2.4_lcd/src/hello_world/nt35310.c" "E:/github_ide/SEASKY_K210/software/seasky_yolo_v1_2.4_lcd/build/CMakeFiles/hello_world.dir/src/hello_world/nt35310.c.obj"
-  "E:/github_ide/SEASKY_K210/software/seasky_yolo_v1_2.4_lcd/src/hello_world/ov2640.c" "E:/github_ide/SEASKY_K210/software/seasky_yolo_v1_2.4_lcd/build/CMakeFiles/hello_world.dir/src/hello_world/ov2640.c.obj"
-  "E:/github_ide/SEASKY_K210/software/seasky_yolo_v1_2.4_lcd/src/hello_world/ov5640.c" "E:/github_ide/SEASKY_K210/software/seasky_yolo_v1_2.4_lcd/build/CMakeFiles/hello_world.dir/src/hello_world/ov5640.c.obj"
-  "E:/github_ide/SEASKY_K210/software/seasky_yolo_v1_2.4_lcd/src/hello_world/region_layer.c" "E:/github_ide/SEASKY_K210/software/seasky_yolo_v1_2.4_lcd/build/CMakeFiles/hello_world.dir/src/hello_world/region_layer.c.obj"
-  "E:/github_ide/SEASKY_K210/software/seasky_yolo_v1_2.4_lcd/src/hello_world/w25qxx.c" "E:/github_ide/SEASKY_K210/software/seasky_yolo_v1_2.4_lcd/build/CMakeFiles/hello_world.dir/src/hello_world/w25qxx.c.obj"
+  "E:/github_ide/SEASKY_K210/software/seasky_yolo_2.4/src/hello_world/image_process.c" "E:/github_ide/SEASKY_K210/software/seasky_yolo_2.4/build/CMakeFiles/hello_world.dir/src/hello_world/image_process.c.obj"
+  "E:/github_ide/SEASKY_K210/software/seasky_yolo_2.4/src/hello_world/lcd.c" "E:/github_ide/SEASKY_K210/software/seasky_yolo_2.4/build/CMakeFiles/hello_world.dir/src/hello_world/lcd.c.obj"
+  "E:/github_ide/SEASKY_K210/software/seasky_yolo_2.4/src/hello_world/main.c" "E:/github_ide/SEASKY_K210/software/seasky_yolo_2.4/build/CMakeFiles/hello_world.dir/src/hello_world/main.c.obj"
+  "E:/github_ide/SEASKY_K210/software/seasky_yolo_2.4/src/hello_world/nt35310.c" "E:/github_ide/SEASKY_K210/software/seasky_yolo_2.4/build/CMakeFiles/hello_world.dir/src/hello_world/nt35310.c.obj"
+  "E:/github_ide/SEASKY_K210/software/seasky_yolo_2.4/src/hello_world/ov2640.c" "E:/github_ide/SEASKY_K210/software/seasky_yolo_2.4/build/CMakeFiles/hello_world.dir/src/hello_world/ov2640.c.obj"
+  "E:/github_ide/SEASKY_K210/software/seasky_yolo_2.4/src/hello_world/ov5640.c" "E:/github_ide/SEASKY_K210/software/seasky_yolo_2.4/build/CMakeFiles/hello_world.dir/src/hello_world/ov5640.c.obj"
+  "E:/github_ide/SEASKY_K210/software/seasky_yolo_2.4/src/hello_world/region_layer.c" "E:/github_ide/SEASKY_K210/software/seasky_yolo_2.4/build/CMakeFiles/hello_world.dir/src/hello_world/region_layer.c.obj"
+  "E:/github_ide/SEASKY_K210/software/seasky_yolo_2.4/src/hello_world/w25qxx.c" "E:/github_ide/SEASKY_K210/software/seasky_yolo_2.4/build/CMakeFiles/hello_world.dir/src/hello_world/w25qxx.c.obj"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 
@@ -50,8 +50,8 @@ set(CMAKE_C_TARGET_INCLUDE_PATH
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "E:/github_ide/SEASKY_K210/software/seasky_yolo_v1_2.4_lcd/build/lib/CMakeFiles/kendryte.dir/DependInfo.cmake"
-  "E:/github_ide/SEASKY_K210/software/seasky_yolo_v1_2.4_lcd/build/lib/nncase/CMakeFiles/nncase.dir/DependInfo.cmake"
+  "E:/github_ide/SEASKY_K210/software/seasky_yolo_2.4/build/lib/CMakeFiles/kendryte.dir/DependInfo.cmake"
+  "E:/github_ide/SEASKY_K210/software/seasky_yolo_2.4/build/lib/nncase/CMakeFiles/nncase.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

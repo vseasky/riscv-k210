@@ -1,4 +1,4 @@
-# Install script for directory: E:/github_ide/SEASKY_K210/software/seasky_yolo_v1_2.4_lcd/lib/nncase
+# Install script for directory: E:/github_ide/SEASKY_K210/software/seasky_yolo_2.4/lib/nncase
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

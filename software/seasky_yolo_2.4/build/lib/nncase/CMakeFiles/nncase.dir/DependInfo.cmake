@@ -4,13 +4,13 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "E:/github_ide/SEASKY_K210/software/seasky_yolo_v1_2.4_lcd/lib/nncase/nncase.cpp" "E:/github_ide/SEASKY_K210/software/seasky_yolo_v1_2.4_lcd/build/lib/nncase/CMakeFiles/nncase.dir/nncase.cpp.obj"
-  "E:/github_ide/SEASKY_K210/software/seasky_yolo_v1_2.4_lcd/lib/nncase/runtime/cpu/cpu_ops.cpp" "E:/github_ide/SEASKY_K210/software/seasky_yolo_v1_2.4_lcd/build/lib/nncase/CMakeFiles/nncase.dir/runtime/cpu/cpu_ops.cpp.obj"
-  "E:/github_ide/SEASKY_K210/software/seasky_yolo_v1_2.4_lcd/lib/nncase/runtime/interpreter.cpp" "E:/github_ide/SEASKY_K210/software/seasky_yolo_v1_2.4_lcd/build/lib/nncase/CMakeFiles/nncase.dir/runtime/interpreter.cpp.obj"
-  "E:/github_ide/SEASKY_K210/software/seasky_yolo_v1_2.4_lcd/lib/nncase/runtime/k210/interpreter.cpp" "E:/github_ide/SEASKY_K210/software/seasky_yolo_v1_2.4_lcd/build/lib/nncase/CMakeFiles/nncase.dir/runtime/k210/interpreter.cpp.obj"
-  "E:/github_ide/SEASKY_K210/software/seasky_yolo_v1_2.4_lcd/lib/nncase/runtime/k210/k210_ops.cpp" "E:/github_ide/SEASKY_K210/software/seasky_yolo_v1_2.4_lcd/build/lib/nncase/CMakeFiles/nncase.dir/runtime/k210/k210_ops.cpp.obj"
-  "E:/github_ide/SEASKY_K210/software/seasky_yolo_v1_2.4_lcd/lib/nncase/runtime/kernel_registry.cpp" "E:/github_ide/SEASKY_K210/software/seasky_yolo_v1_2.4_lcd/build/lib/nncase/CMakeFiles/nncase.dir/runtime/kernel_registry.cpp.obj"
-  "E:/github_ide/SEASKY_K210/software/seasky_yolo_v1_2.4_lcd/lib/nncase/runtime/neutral/neutral_ops.cpp" "E:/github_ide/SEASKY_K210/software/seasky_yolo_v1_2.4_lcd/build/lib/nncase/CMakeFiles/nncase.dir/runtime/neutral/neutral_ops.cpp.obj"
+  "E:/github_ide/SEASKY_K210/software/seasky_yolo_2.4/lib/nncase/nncase.cpp" "E:/github_ide/SEASKY_K210/software/seasky_yolo_2.4/build/lib/nncase/CMakeFiles/nncase.dir/nncase.cpp.obj"
+  "E:/github_ide/SEASKY_K210/software/seasky_yolo_2.4/lib/nncase/runtime/cpu/cpu_ops.cpp" "E:/github_ide/SEASKY_K210/software/seasky_yolo_2.4/build/lib/nncase/CMakeFiles/nncase.dir/runtime/cpu/cpu_ops.cpp.obj"
+  "E:/github_ide/SEASKY_K210/software/seasky_yolo_2.4/lib/nncase/runtime/interpreter.cpp" "E:/github_ide/SEASKY_K210/software/seasky_yolo_2.4/build/lib/nncase/CMakeFiles/nncase.dir/runtime/interpreter.cpp.obj"
+  "E:/github_ide/SEASKY_K210/software/seasky_yolo_2.4/lib/nncase/runtime/k210/interpreter.cpp" "E:/github_ide/SEASKY_K210/software/seasky_yolo_2.4/build/lib/nncase/CMakeFiles/nncase.dir/runtime/k210/interpreter.cpp.obj"
+  "E:/github_ide/SEASKY_K210/software/seasky_yolo_2.4/lib/nncase/runtime/k210/k210_ops.cpp" "E:/github_ide/SEASKY_K210/software/seasky_yolo_2.4/build/lib/nncase/CMakeFiles/nncase.dir/runtime/k210/k210_ops.cpp.obj"
+  "E:/github_ide/SEASKY_K210/software/seasky_yolo_2.4/lib/nncase/runtime/kernel_registry.cpp" "E:/github_ide/SEASKY_K210/software/seasky_yolo_2.4/build/lib/nncase/CMakeFiles/nncase.dir/runtime/kernel_registry.cpp.obj"
+  "E:/github_ide/SEASKY_K210/software/seasky_yolo_2.4/lib/nncase/runtime/neutral/neutral_ops.cpp" "E:/github_ide/SEASKY_K210/software/seasky_yolo_2.4/build/lib/nncase/CMakeFiles/nncase.dir/runtime/neutral/neutral_ops.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

@@ -39,25 +39,46 @@
 #define CLASS_NUMBER 20
 
 extern const unsigned char gImage_image[] __attribute__((aligned(128)));
-static uint16_t lcd_gram[320 * 240] __attribute__((aligned(32)));
+static uint16_t lcd_gram[320 * 224] __attribute__((aligned(32)));
 
 /*模型存放方式*/
 #define LOAD_KMODEL_FROM_FLASH 0
 #if LOAD_KMODEL_FROM_FLASH
-#define KMODEL_SIZE (1351976)
+#define KMODEL_SIZE (3927548)
 #define LOAD_FLASH_ADDR 0xA00000 //存放地址
 uint8_t *model_data;
 #else
-INCBIN(model, "yolo.kmodel");
+INCBIN(model, "mx_yolo.kmodel");
 #endif
 
 kpu_model_context_t task;
-static obj_info_t detect_info;
-static region_layer_t detect_rl;
+static obj_info_t detect_info0, detect_info1;
+static region_layer_t detect_rl0, detect_rl1;
 
 volatile uint32_t g_ai_done_flag;
 volatile uint8_t g_dvp_finish_flag;
 static image_t kpu_image, display_image;
+
+#define ANCHOR_NUM 3
+// NOTE x,y
+
+static float layer0_anchor[ANCHOR_NUM * 2] = {
+    0.76120044,
+    0.57155991,
+    0.6923348,
+    0.88535553,
+    0.47163042,
+    0.34163313,
+};
+
+static float layer1_anchor[ANCHOR_NUM * 2] = {
+    0.33340788,
+    0.70065861,
+    0.18124964,
+    0.38986752,
+    0.08497349,
+    0.1527057,
+};
 
 static int ai_done(void *ctx)
 {
@@ -80,9 +101,6 @@ static int dvp_irq(void *ctx)
     }
     return 0;
 }
-#define ANCHOR_NUM 5
-
-float g_anchor[ANCHOR_NUM * 2] = {1.08, 1.19, 3.42, 4.41, 6.63, 11.38, 9.42, 5.11, 16.62, 10.52};
 
 //初始化设备，使用宏定义区分board，详情修改 board_config.h
 static void io_init(void)
@@ -158,8 +176,8 @@ static void draw_edge(uint32_t *gram, obj_info_t *obj_info, uint32_t index, uint
         x2 = 318;
     if(y1 <= 0)
         y1 = 1;
-    if(y2 >= 239)
-        y2 = 238;
+    if(y2 >= 223)
+        y2 = 222;
 
     addr1 = gram + (320 * y1 + x1) / 2;
     addr2 = gram + (320 * y1 + x2 - 8) / 2;
@@ -258,10 +276,10 @@ static void drawboxes(uint32_t x1, uint32_t y1, uint32_t x2, uint32_t y2, uint32
         x1 = 319;
     if(x2 >= 320)
         x2 = 319;
-    if(y1 >= 240)
-        y1 = 239;
-    if(y2 >= 240)
-        y2 = 239;
+    if(y1 >= 224)
+        y1 = 223;
+    if(y2 >= 224)
+        y2 = 223;
 #if(CLASS_NUMBER > 1)
     lcd_draw_rectangle(x1, y1, x2, y2, 2, class_lable[class].color);
     lcd_draw_picture(x1 + 1, y1 + 1, class_lable[class].width, class_lable[class].height, class_lable[class].ptr);
@@ -276,10 +294,10 @@ static void send_data(uint32_t x1, uint32_t y1, uint32_t x2, uint32_t y2, uint32
         x1 = 319;
     if(x2 >= 320)
         x2 = 319;
-    if(y1 >= 240)
-        y1 = 239;
-    if(y2 >= 240)
-        y2 = 239;
+    if(y1 >= 224)
+        y1 = 223;
+    if(y2 >= 224)
+        y2 = 223;
 
     char data[4];
     int n;
@@ -304,7 +322,7 @@ int main(void)
 
 #if LOAD_KMODEL_FROM_FLASH //如果kmodel存放于flash
     model_data = (uint8_t *)iomem_malloc(KMODEL_SIZE);
-    w25qxx_read_data(LOAD_FLASH_ADDR, model_data, KMODEL_SIZE, W25QXX_QUAD_FAST);
+    w25qxx_read_data(LOAD_FLASH_ADDR, model_data, KMODEL_SIZE, W25QXX_DUAL);
 #endif
 
     lable_init();
@@ -320,6 +338,7 @@ int main(void)
     lcd_draw_string(110, 70, "SEASKY DEMO", WHITE);
     lcd_draw_string(110, 150, "hello yolo", WHITE);
     sleep(1);
+
     /* DVP 初始化 */
     printf("DVP init\n");
 
@@ -330,7 +349,7 @@ int main(void)
     dvp_set_output_enable(0, 1);
     dvp_set_output_enable(1, 1);
     dvp_set_image_format(DVP_CFG_RGB_FORMAT);
-    dvp_set_image_size(320, 240);
+    dvp_set_image_size(320, 224);
     ov5640_init();
 #else
     dvp_init(8);
@@ -339,18 +358,20 @@ int main(void)
     dvp_set_output_enable(0, 1);
     dvp_set_output_enable(1, 1);
     dvp_set_image_format(DVP_CFG_RGB_FORMAT);
-    dvp_set_image_size(320, 240);
+    dvp_set_image_size(320, 224);
     ov2640_init();
 #endif
     kpu_image.pixel = 3;
     kpu_image.width = 320;
-    kpu_image.height = 240;
+    kpu_image.height = 224;
     image_init(&kpu_image);
     display_image.pixel = 2;
     display_image.width = 320;
-    display_image.height = 240;
+    display_image.height = 224;
     image_init(&display_image);
-    dvp_set_ai_addr((uint32_t)kpu_image.addr, (uint32_t)(kpu_image.addr + 320 * 240), (uint32_t)(kpu_image.addr + 320 * 240 * 2));
+    dvp_set_ai_addr((uint32_t)kpu_image.addr,
+                    (uint32_t)(kpu_image.addr + 320 * 224),
+                    (uint32_t)(kpu_image.addr + 320 * 224 * 2));
     dvp_set_display_addr((uint32_t)display_image.addr);
     dvp_config_interrupt(DVP_CFG_START_INT_ENABLE | DVP_CFG_FINISH_INT_ENABLE, 0);
     dvp_disable_auto();
@@ -373,11 +394,18 @@ int main(void)
         while(1)
             ;
     }
-    detect_rl.anchor_number = ANCHOR_NUM;
-    detect_rl.anchor = g_anchor;
-    detect_rl.threshold = 0.5;
-    detect_rl.nms_value = 0.2;
-    region_layer_init(&detect_rl, 10, 7, 125, kpu_image.width, kpu_image.height);
+
+    detect_rl0.anchor_number = ANCHOR_NUM;
+    detect_rl0.anchor = layer0_anchor;
+    detect_rl0.threshold = 0.6;
+    detect_rl0.nms_value = 0.3;
+    region_layer_init(&detect_rl0, 10, 7, 75, kpu_image.width, kpu_image.height);
+
+    detect_rl1.anchor_number = ANCHOR_NUM;
+    detect_rl1.anchor = layer1_anchor;
+    detect_rl1.threshold = 0.6;
+    detect_rl1.nms_value = 0.3;
+    region_layer_init(&detect_rl1, 20, 14, 75, kpu_image.width, kpu_image.height);
 
     /*启用全局中断 */
     sysctl_enable_irq();
@@ -405,17 +433,27 @@ int main(void)
         kpu_run_kmodel(&task, kpu_image.addr, DMAC_CHANNEL5, ai_done, NULL);
         while(!g_ai_done_flag) //等待
             ;
-        float *output;
-        size_t output_size;
-        kpu_get_output(&task, 0, (uint8_t **)&output, &output_size);
-        detect_rl.input = output;
-        output_size /= sizeof(float);
+
+        float *output0, *output1;
+        size_t output_size0, output_size1;
+
+        // NOTE output_size 是字节， float 是4字节
+        kpu_get_output(&task, 0, (uint8_t **)&output0, &output_size0);
+        kpu_get_output(&task, 1, (uint8_t **)&output1, &output_size1);
+
+        detect_rl0.input = output0;
+        region_layer_run(&detect_rl0, &detect_info0);
+        detect_rl1.input = output1;
+        region_layer_run(&detect_rl1, &detect_info1);
+
+        // output_size /= sizeof(float);
         /* start region layer */
-        region_layer_run(&detect_rl, &detect_info);
-        lcd_draw_picture(0, 0, 320, 240, (uint32_t *)display_image.addr);
+        // region_layer_run(&detect_rl, &detect_info);
+        lcd_draw_picture(0, 0, 320, 224, (uint32_t *)display_image.addr);
 
         /* draw boxs */
-        region_layer_draw_boxes(&detect_rl, drawboxes);
-        region_layer_write_to_uart(&detect_rl, send_data);
+        region_layer_draw_boxes(&detect_rl0, drawboxes);
+        region_layer_draw_boxes(&detect_rl1, drawboxes);
+        // region_layer_write_to_uart(&detect_rl, send_data);
     }
 }

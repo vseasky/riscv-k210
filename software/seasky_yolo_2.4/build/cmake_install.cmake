@@ -1,4 +1,4 @@
-# Install script for directory: E:/github_ide/SEASKY_K210/software/seasky_yolo_v1_2.4_lcd
+# Install script for directory: E:/github_ide/SEASKY_K210/software/seasky_yolo_2.4
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -34,7 +34,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("E:/github_ide/SEASKY_K210/software/seasky_yolo_v1_2.4_lcd/build/lib/cmake_install.cmake")
+  include("E:/github_ide/SEASKY_K210/software/seasky_yolo_2.4/build/lib/cmake_install.cmake")
 
 endif()
 
@@ -46,5 +46,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "E:/github_ide/SEASKY_K210/software/seasky_yolo_v1_2.4_lcd/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "E:/github_ide/SEASKY_K210/software/seasky_yolo_2.4/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
