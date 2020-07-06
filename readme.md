@@ -2,9 +2,18 @@
 
 **LICENSE:** **MIT License**
 
+
+### 个人博客：<a href="https://seasky-master.github.io/SEASKY-Master/">https://seasky-master.github.io/SEASKY-Master/</a>
+
+## 硬件设计：[https://github.com/SEASKY-Master/SEASKY_K210](https://github.com/SEASKY-Master/SEASKY_K210 "pcb")
+## 软件设计：[https://github.com/SEASKY-Master/Yolo-for-k210](https://github.com/SEASKY-Master/Yolo-for-k210 "Yolo-for-k210")
+## 演示视频：
+
 **B站视频[https://b23.tv/Yrvqdr](https://b23.tv/Yrvqdr)**
 
-**最终演示视频[https://b23.tv/My8G7x](https://b23.tv/My8G7x)**
+**演示视频[https://b23.tv/My8G7x](https://b23.tv/My8G7x)**
+
+**模型训练部署[https://b23.tv/Faa0TS](https://b23.tv/Faa0TS)**
 
 **简介**：
 
