@@ -48,7 +48,7 @@ static uint16_t lcd_gram[320 * 224] __attribute__((aligned(32)));
 #define LOAD_FLASH_ADDR 0xA00000 //存放地址
 uint8_t *model_data;
 #else
-INCBIN(model, "mx_yolo.kmodel");
+INCBIN(model, "mobile_yolo.kmodel");
 #endif
 
 kpu_model_context_t task;
@@ -454,6 +454,7 @@ int main(void)
         /* draw boxs */
         region_layer_draw_boxes(&detect_rl0, drawboxes);
         region_layer_draw_boxes(&detect_rl1, drawboxes);
-        // region_layer_write_to_uart(&detect_rl, send_data);
+        // region_layer_write_to_uart(&detect_rl0, send_data);
+        // region_layer_write_to_uart(&detect_rl1, send_data);
     }
 }

@@ -13,7 +13,7 @@
 
 **演示视频[https://b23.tv/My8G7x](https://b23.tv/My8G7x)**
 
-**模型训练部署[https://b23.tv/Faa0TS](https://b23.tv/Faa0TS)**
+**模型训练部署[https://b23.tv/PJd2JN](https://b23.tv/PJd2JN)**
 
 **简介**：
 
