@@ -105,6 +105,10 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=TBSOBUQJ
 
+[GeneratedDocument1]
+DocumentPath=Project Outputs for K210\Design Rule Check - K210_Board.html
+DItemRevisionGUID=
+
 [Configuration1]
 Name=Sources
 ParameterCount=0
