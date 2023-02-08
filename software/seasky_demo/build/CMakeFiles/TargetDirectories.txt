@@ -1,9 +1,0 @@
-E:/github_ide/SEASKY_K210/software/seasky_demo/build/CMakeFiles/edit_cache.dir
-E:/github_ide/SEASKY_K210/software/seasky_demo/build/CMakeFiles/hello_world.dir
-E:/github_ide/SEASKY_K210/software/seasky_demo/build/CMakeFiles/rebuild_cache.dir
-E:/github_ide/SEASKY_K210/software/seasky_demo/build/lib/CMakeFiles/rebuild_cache.dir
-E:/github_ide/SEASKY_K210/software/seasky_demo/build/lib/CMakeFiles/kendryte.dir
-E:/github_ide/SEASKY_K210/software/seasky_demo/build/lib/CMakeFiles/edit_cache.dir
-E:/github_ide/SEASKY_K210/software/seasky_demo/build/lib/nncase/CMakeFiles/nncase.dir
-E:/github_ide/SEASKY_K210/software/seasky_demo/build/lib/nncase/CMakeFiles/edit_cache.dir
-E:/github_ide/SEASKY_K210/software/seasky_demo/build/lib/nncase/CMakeFiles/rebuild_cache.dir

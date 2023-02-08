@@ -1,9 +1,0 @@
-E:/github_ide/Yolo-for-k210/seasky_yolo/build/CMakeFiles/edit_cache.dir
-E:/github_ide/Yolo-for-k210/seasky_yolo/build/CMakeFiles/hello_world.dir
-E:/github_ide/Yolo-for-k210/seasky_yolo/build/CMakeFiles/rebuild_cache.dir
-E:/github_ide/Yolo-for-k210/seasky_yolo/build/lib/CMakeFiles/rebuild_cache.dir
-E:/github_ide/Yolo-for-k210/seasky_yolo/build/lib/CMakeFiles/kendryte.dir
-E:/github_ide/Yolo-for-k210/seasky_yolo/build/lib/CMakeFiles/edit_cache.dir
-E:/github_ide/Yolo-for-k210/seasky_yolo/build/lib/nncase/CMakeFiles/nncase.dir
-E:/github_ide/Yolo-for-k210/seasky_yolo/build/lib/nncase/CMakeFiles/edit_cache.dir
-E:/github_ide/Yolo-for-k210/seasky_yolo/build/lib/nncase/CMakeFiles/rebuild_cache.dir
