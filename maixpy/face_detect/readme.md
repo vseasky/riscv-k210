@@ -1,0 +1,1 @@
+https://maixhub.com/model/zoo/68

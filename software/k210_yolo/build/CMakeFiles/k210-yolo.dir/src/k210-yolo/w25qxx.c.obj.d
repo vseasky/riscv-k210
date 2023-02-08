@@ -1,0 +1,21 @@
+CMakeFiles/k210-yolo.dir/src/k210-yolo/w25qxx.c.obj: \
+ E:\github\k210\software\k210_yolo\src\k210-yolo\w25qxx.c \
+ E:\github\k210\software\k210_yolo\src\k210-yolo\w25qxx.h \
+ d:\softwaretools\kendryte-toolchain\lib\gcc\riscv64-unknown-elf\8.2.0\include\stdint.h \
+ d:\softwaretools\kendryte-toolchain\riscv64-unknown-elf\include\stdint.h \
+ d:\softwaretools\kendryte-toolchain\riscv64-unknown-elf\include\machine\_default_types.h \
+ d:\softwaretools\kendryte-toolchain\riscv64-unknown-elf\include\sys\features.h \
+ d:\softwaretools\kendryte-toolchain\riscv64-unknown-elf\include\_newlib_version.h \
+ d:\softwaretools\kendryte-toolchain\riscv64-unknown-elf\include\sys\_intsup.h \
+ d:\softwaretools\kendryte-toolchain\riscv64-unknown-elf\include\sys\_stdint.h \
+ E:\github\k210\software\k210_yolo\lib\drivers\include/fpioa.h \
+ E:\github\k210\software\k210_yolo\lib\bsp\include/platform.h \
+ E:\github\k210\software\k210_yolo\lib\drivers\include/spi.h \
+ d:\softwaretools\kendryte-toolchain\lib\gcc\riscv64-unknown-elf\8.2.0\include\stddef.h \
+ E:\github\k210\software\k210_yolo\lib\drivers\include/dmac.h \
+ E:\github\k210\software\k210_yolo\lib\drivers\include/io.h \
+ E:\github\k210\software\k210_yolo\lib\drivers\include/plic.h \
+ E:\github\k210\software\k210_yolo\lib\bsp\include/encoding.h \
+ d:\softwaretools\kendryte-toolchain\lib\gcc\riscv64-unknown-elf\8.2.0\include\stdbool.h \
+ E:\github\k210\software\k210_yolo\lib\drivers\include/sysctl.h \
+ E:\github\k210\software\k210_yolo\lib\drivers\include/dmac.h

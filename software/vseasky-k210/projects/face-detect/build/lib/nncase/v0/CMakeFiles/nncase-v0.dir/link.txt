@@ -1,0 +1,2 @@
+D:\SoftwareTools\kendryte-toolchain\bin\riscv64-unknown-elf-ar.exe qc libnncase-v0.a "CMakeFiles/nncase-v0.dir/nncase_v0.cpp.obj" "CMakeFiles/nncase-v0.dir/runtime/cpu/cpu_ops.cpp.obj" "CMakeFiles/nncase-v0.dir/runtime/interpreter.cpp.obj" "CMakeFiles/nncase-v0.dir/runtime/k210/interpreter.cpp.obj" "CMakeFiles/nncase-v0.dir/runtime/k210/k210_ops.cpp.obj" "CMakeFiles/nncase-v0.dir/runtime/kernel_registry.cpp.obj" "CMakeFiles/nncase-v0.dir/runtime/neutral/neutral_ops.cpp.obj"
+D:\SoftwareTools\kendryte-toolchain\bin\riscv64-unknown-elf-ranlib.exe libnncase-v0.a

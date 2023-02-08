@@ -1,0 +1,2 @@
+D:\SoftwareTools\kendryte-toolchain\bin\riscv64-unknown-elf-ar.exe qc libnncase-wrapper.a "CMakeFiles/nncase-wrapper.dir/nncase.cpp.obj"
+D:\SoftwareTools\kendryte-toolchain\bin\riscv64-unknown-elf-ranlib.exe libnncase-wrapper.a
