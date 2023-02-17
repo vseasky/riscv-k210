@@ -1,9 +1,0 @@
-E:/github/k210/software/k210_yolo/build/CMakeFiles/k210-yolo.dir
-E:/github/k210/software/k210_yolo/build/CMakeFiles/edit_cache.dir
-E:/github/k210/software/k210_yolo/build/CMakeFiles/rebuild_cache.dir
-E:/github/k210/software/k210_yolo/build/lib/CMakeFiles/kendryte.dir
-E:/github/k210/software/k210_yolo/build/lib/CMakeFiles/edit_cache.dir
-E:/github/k210/software/k210_yolo/build/lib/CMakeFiles/rebuild_cache.dir
-E:/github/k210/software/k210_yolo/build/lib/nncase/CMakeFiles/nncase.dir
-E:/github/k210/software/k210_yolo/build/lib/nncase/CMakeFiles/edit_cache.dir
-E:/github/k210/software/k210_yolo/build/lib/nncase/CMakeFiles/rebuild_cache.dir

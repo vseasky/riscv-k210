@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "bsp.h": "c",
+        "incbin.h": "c",
+        "dvp.h": "c"
+    }
+}

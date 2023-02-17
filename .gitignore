@@ -4,6 +4,8 @@ tools
 *.zip
 *.rar
 *.7z
+*/build/*
+!/build/*.bin
 support/canmv/canmv
 support/maixpy/maixpy
 !swapbytes.exe
