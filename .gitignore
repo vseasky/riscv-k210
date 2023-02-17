@@ -1,0 +1,9 @@
+hardware/blender
+tools
+*.exe
+*.zip
+*.rar
+*.7z
+support/canmv/canmv
+support/maixpy/maixpy
+!swapbytes.exe
