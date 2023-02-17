@@ -1,9 +1,0 @@
-E:/github/riscv-k210/software/k210-yolo/build/CMakeFiles/hello_world.dir
-E:/github/riscv-k210/software/k210-yolo/build/CMakeFiles/edit_cache.dir
-E:/github/riscv-k210/software/k210-yolo/build/CMakeFiles/rebuild_cache.dir
-E:/github/riscv-k210/software/k210-yolo/build/lib/CMakeFiles/kendryte.dir
-E:/github/riscv-k210/software/k210-yolo/build/lib/CMakeFiles/edit_cache.dir
-E:/github/riscv-k210/software/k210-yolo/build/lib/CMakeFiles/rebuild_cache.dir
-E:/github/riscv-k210/software/k210-yolo/build/lib/nncase/CMakeFiles/nncase.dir
-E:/github/riscv-k210/software/k210-yolo/build/lib/nncase/CMakeFiles/edit_cache.dir
-E:/github/riscv-k210/software/k210-yolo/build/lib/nncase/CMakeFiles/rebuild_cache.dir
